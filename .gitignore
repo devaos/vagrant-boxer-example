@@ -1,1 +1,4 @@
+# Ignore .vagrant directories
 /*/.vagrant
+# Ignore generated vagrant boxes
+*.box

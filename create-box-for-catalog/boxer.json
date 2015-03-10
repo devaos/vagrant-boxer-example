@@ -1,0 +1,6 @@
+{
+  "boxer-id": "xclusv/example",
+  "vm-name": "example",
+  "version": "1.0",
+  "upload-base-uri": "vagrant-boxer-example.xclusv.co:/data/www/xclusv.co/vagrant-boxer-example/files/"
+}

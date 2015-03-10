@@ -1,0 +1,3 @@
+[submodule "create-box-for-catalog/vagrant-boxer"]
+	path = create-box-for-catalog/vagrant-boxer
+	url = https://github.com/vube/vagrant-boxer

@@ -1,0 +1,25 @@
+#!ruby
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+vmName = 'example'  # name of the VM in VirtualBox, MUST MATCH 'vm-name' PARAMETER IN boxer.json
+vmHost = 'example.create-for-catalog'
+
+Vagrant.configure(2) do |config|
+
+  config.vm.box = 'chef/debian-7.4'
+
+  config.vm.hostname = vmHost
+  config.ssh.insert_key = false
+
+  config.vm.provider 'virtualbox' do |v|
+    # Name the VM in the VirtualBox display
+    v.name = vmName
+    v.memory = 1024 # RAM Limit (in MB)
+    v.cpus = 2 # CPU core limit
+  end
+
+  # Do whatever it is that makes your box special
+  config.vm.provision :shell, path: 'provision.sh'
+
+end

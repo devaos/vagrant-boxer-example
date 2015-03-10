@@ -1,0 +1,23 @@
+#!ruby
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+vmName = 'example2'  # name of the VM in VirtualBox
+vmHost = 'example2.from-catalog'
+
+Vagrant.configure(2) do |config|
+
+  config.vm.box = 'xclusv/example' # MUST MATCH 'boxer-id' PARAMETER
+  config.vm.box_url = 'http://vagrant-boxer-example.xclusv.co/catalog/xclusv/example' # MUST MATCH 'upload-base-uri' PARAMETER
+
+  config.vm.hostname = vmHost
+  config.ssh.insert_key = false
+
+  config.vm.provider 'virtualbox' do |v|
+    # Name the VM in the VirtualBox display
+    v.name = vmName
+    v.memory = 1024 # 1 GB RAM Limit
+    v.cpus = 2 # 2 CPU core limit
+  end
+
+end

@@ -1,0 +1,16 @@
+{
+    "name": "xclusv\/example",
+    "versions": [
+        {
+            "version": "1.0.0",
+            "providers": [
+                {
+                    "name": "virtualbox",
+                    "url": "{{download_url_prefix}}{{path_info}}\/example-1.0.0-virtualbox.box",
+                    "checksum_type": "sha1",
+                    "checksum": "c0e1520948b2d2188548fce1ce438c750e13d30c"
+                }
+            ]
+        }
+    ]
+}
