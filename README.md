@@ -136,6 +136,8 @@ you@workstation$ composer install --no-interaction --no-dev --optimize-autoloade
 The [create-box-for-catalog](create-box-for-catalog) directory contains a sample project that creates a new base
 box and keeps it updated on your vagrant-catalog server.
 
+See the [README](create-box-for-catalog/README.md) in that directory for more info.
+
 To create your new base box, we'll base it on the `chef/debian-7.4` image from
 Vagrant Cloud, and then do some custom provisioning to make it your own.
 
@@ -213,6 +215,8 @@ you@workstation$ php vagrant-boxer/boxer.php --verbose
 
 The [use-box-from-catalog](use-box-from-catalog) directory shows an example second project that wishes
 to use the base box you created.
+
+See the [README](use-box-from-catalog/README.md) in that directory for more info.
 
 This is very simple, the `Vagrantfile` is the only thing you need to look at, and in particular
 these 2 lines:
